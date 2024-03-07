@@ -88,12 +88,11 @@ Dnode* find_in_dlist(Dnode* list, int target) {
     return NULL;
 }
 
-/*
-char* print_list(Node* head) {
+char* print_list(Dnode* head) {
     char* result = malloc(1024);
 
     int index = 0;
-    Node* node = head;
+    Dnode* node = head;
     while (node != NULL) {
         int num_len = snprintf(NULL, 0, "%d", node->val);
         snprintf(result + index, 8, "%d", node->val);
@@ -112,4 +111,3 @@ char* print_list(Node* head) {
 
     return result;
 }
-*/
